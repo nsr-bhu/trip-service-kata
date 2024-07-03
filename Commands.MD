@@ -8,6 +8,8 @@ $ python -m pytest -v --no-header
 
 ## Continue draaien 
 
+pytest-watch werkte niet goed, pytest-wachter wel.
+
 ```
 $ pytest-watcher .
 ```
@@ -42,9 +44,8 @@ https://jasonstitt.com/perfect-python-live-test-coverage
 
 ## Alias
 
-# TODO
+* git repo met start: https://github.com/nsr-bhu/trip-service-kata
 
-* Eigen git repo voor begin.
-* coverage in gutter aan de praat.
-** TODO pytest-watch werkt niet goed, pytest-wachter wellicht beter...maar nu geen coverage meer in gutter.
+
+
  
