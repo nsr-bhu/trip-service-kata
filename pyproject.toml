@@ -1,0 +1,18 @@
+## pyproject.toml
+[tool.coverage.run]
+source = ["./service/"]
+omit = ["./test/"]
+
+[tool.pytest.ini_options]
+addopts = "-v --no-header --cov --cov-report lcov:./cov/lcov.info" 
+# more options:
+##--cov-report=term --cov-report html:./cov/index.html --cov-report lcov:./cov/lcov.info"
+
+[tool.pytest-watcher]
+now = true
+clear = true
+delay = 0.2
+runner = "pytest"
+runner_args = []
+patterns = ["*.py"]
+ignore_patterns = ["__*.py", "/usr/lib/python3.10/code.py"]
